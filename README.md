@@ -65,8 +65,8 @@ This project is licensed under [MIT License](https://choosealicense.com/licenses
 ## Authors
 
 - [Hasnain Bharmal](https://www.github.com/hbharmal43)
-- [Aniv Surana]()
-- [Hatim Piplodwala]()
+- [Aniv Surana](https://github.com/anivsurana)
+- [Hatim Piplodwala](https://github.com/hatimpiplodwala)
 - [Joshua Mora]()
 
 
