@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:context=".ui.my_ads.MyAdsFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_novioglasprozor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:text="@string/add_friend"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/user_em"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearl_dodajsliku"
+            android:layout_alignBottom="@+id/friend_em"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginBottom="100dp"
+            android:autofillHints="@string/user_em_relation"
+            android:background="@drawable/new_ad_edit_text_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/user_em_relation"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/friend_em"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_relation"
+            android:layout_alignBottom="@+id/add_relation"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="-180dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="270dp"
+            android:autofillHints="@string/friend_em"
+            android:background="@drawable/new_ad_edit_text_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/friend_em"
+            android:inputType="textMultiLine"
+            android:padding="20dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_relation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="600dp"
+            android:layout_marginBottom="?actionBarSize"
+            android:background="@drawable/ic_add_circle"
+            android:button="@android:color/transparent"
+            tools:visibility="visible" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cena"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toEndOf="@+id/cena"
+            android:layout_toRightOf="@+id/cena"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:visibility="visible"/>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+</ScrollView>

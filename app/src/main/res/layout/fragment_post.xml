@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginBottom="?actionBarSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true" />
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_4"
+            android:layout_marginLeft="@dimen/space_4"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginEnd="@dimen/space_4"
+            android:layout_marginRight="@dimen/space_4"
+            android:layout_marginBottom="@dimen/space_16"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poruke" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/naziv_proizvoda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_16"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintBottom_toTopOf="@+id/opis_proizvoda"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Naziv proizvoda" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/opis_proizvoda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_16"
+            android:fontFamily="@font/montserrat"
+            android:padding="@dimen/space_4"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintBottom_toTopOf="@+id/cena_proizvoda"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/naziv_proizvoda"
+            tools:text="Opis proizvoda" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cena_proizvoda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_16"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintBottom_toTopOf="@+id/datum_objavljivanja"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/opis_proizvoda"
+            tools:text="Cena proizvoda" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/divider"
+            app:layout_constraintBottom_toTopOf="@+id/datum_objavljivanja"
+            app:layout_constraintEnd_toEndOf="@+id/delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cena_proizvoda" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/datum_objavljivanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_16"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            app:layout_constraintBottom_toTopOf="@+id/vidjeno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cena_proizvoda"
+            tools:text="Datum objavljivanja proizvoda" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/vidjeno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_16"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            app:layout_constraintBottom_toTopOf="@+id/userName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datum_objavljivanja"
+            tools:text="Vidjeno" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/poruke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_16"
+            android:background="@drawable/mybutton"
+            android:drawableEnd="@drawable/ic_message"
+            android:drawableRight="@drawable/ic_message"
+            android:drawablePadding="@dimen/space_4"
+            android:fontFamily="@font/montserrat"
+            android:padding="@dimen/space_4"
+            android:text="Comment"
+            android:textColor="@color/primary_text"
+            app:layout_constraintBottom_toTopOf="@+id/adView"
+            app:layout_constraintEnd_toStartOf="@+id/pozovi"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImage" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="@dimen/space_16"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/primary_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vidjeno"
+            tools:text="Username" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/divider"
+            app:layout_constraintBottom_toTopOf="@+id/userImage"
+            app:layout_constraintEnd_toEndOf="@+id/delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_16"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="@dimen/space_2"
+            app:layout_constraintBottom_toTopOf="@+id/poruke"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
+            tools:src="@android:mipmap/sym_def_app_icon" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_4"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/delete"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/report_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_4"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_report" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_4"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/edit"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/delete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/edit" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pozovi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:drawableEnd="@drawable/ic_call"
+            android:drawableRight="@drawable/ic_call"
+            android:drawablePadding="@dimen/space_4"
+            android:fontFamily="@font/montserrat"
+            android:padding="@dimen/space_4"
+            android:text="@string/pozovi"
+            android:textColor="@color/primary_text"
+            app:layout_constraintBottom_toTopOf="@+id/adView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/poruke"
+            app:layout_constraintTop_toBottomOf="@+id/userImage" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lokacija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_16"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/primary_text"
+            app:layout_constraintBottom_toTopOf="@+id/pozovi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImage"
+            tools:text="Lokacija" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

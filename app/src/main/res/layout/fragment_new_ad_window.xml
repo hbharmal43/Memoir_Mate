@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:context=".ui.my_ads.MyAdsFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_novioglasprozor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:text="@string/title_newpost"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearl_dodajsliku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_novioglasprozor"
+            android:layout_centerHorizontal="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/myImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_photopreview"
+                    android:contentDescription="@string/izaberite_sliku" />
+            </androidx.cardview.widget.CardView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/myImage1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_photopreview"
+                        android:contentDescription="@string/izaberite_sliku" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/myImage2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_photopreview"
+                        android:contentDescription="@string/izaberite_sliku" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_choosecam"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_photo_camera" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_deletephoto"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_outline_delete" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/myImage3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_photopreview"
+                        android:contentDescription="@string/izaberite_sliku" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/myImage4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_photopreview"
+                        android:contentDescription="@string/izaberite_sliku" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_choose"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_photoaddd" />
+                </TableRow>
+            </TableLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/naslov"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearl_dodajsliku"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="86dp"
+            android:autofillHints="@string/naslov"
+            android:background="@drawable/new_ad_edit_text_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/naslov"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/opis"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="425dp"
+            android:layout_marginRight="45dp"
+            android:autofillHints="@string/caption"
+            android:background="@drawable/new_ad_edit_text_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/caption"
+            android:inputType="textMultiLine"
+            android:padding="20dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/cena"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="330dp"
+            android:autofillHints="@string/cena"
+            android:background="@drawable/new_ad_edit_text_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/cena"
+            android:inputType="textMultiLine"
+            android:padding="20dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_new_post"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="720dp"
+            android:layout_marginBottom="?actionBarSize"
+            android:background="@drawable/ic_add_circle"
+            android:button="@android:color/transparent"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="655dp"
+            android:contentDescription="@string/izaberite_sliku"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cena"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toEndOf="@+id/cena"
+            android:layout_toRightOf="@+id/cena"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:visibility="visible"/>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+</ScrollView>

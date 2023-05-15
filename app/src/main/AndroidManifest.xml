@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vukan.com.fftd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".accessRights"
+            android:label="Access Rights">
+        </activity>
+
+        <activity
+            android:name=".Member"
+            android:label="Member" />
+
+        <activity
+            android:name=".Organizer"
+            android:label="Organizer" />
+        <activity
+            android:name=".FamilyAncestryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriendHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TravelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddRelation"
+            android:exported="false" />
+        <activity
+            android:name=".AddFriend"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

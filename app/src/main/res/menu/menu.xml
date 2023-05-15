@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/change_language"
+        android:title="@string/change_language" />
+
+    <item
+        android:id="@+id/change_theme"
+        android:title="@string/change_theme" />
+
+    <item
+        android:id="@+id/privacy_policy"
+        android:title="@string/privacy_policy" />
+
+    <item
+        android:id="@+id/terms_and_conditions"
+        android:title="@string/terms_and_conditions" />
+
+    <item
+        android:id="@+id/sign_out"
+        android:title="@string/sign_out" />
+
+</menu>

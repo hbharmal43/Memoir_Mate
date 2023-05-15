@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_pocetna"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_pocetna" />
+
+    <item
+        android:id="@+id/navigation_poruke"
+        android:icon="@drawable/ic_message"
+        android:title="@string/title_pages" />
+
+    <item
+        android:id="@+id/navigation_novioglas"
+        android:icon="@drawable/ic_add"
+        android:title="@string/title_newpost" />
+
+    <item
+        android:id="@+id/navigation_omiljeni"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/omiljeni" />
+
+    <item
+        android:id="@+id/navigation_mojioglasi"
+        android:icon="@drawable/ic_list"
+        android:title="@string/title_mojioglasi" />
+</menu>

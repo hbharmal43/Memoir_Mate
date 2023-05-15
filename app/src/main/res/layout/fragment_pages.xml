@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/eventsButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/holo_red_dark"
+            android:text="@string/events"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:onClick="onEventsButtonClick"/>
+
+        <Button
+            android:id="@+id/travelButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/travel"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:onClick="onTravelButtonClick"/>
+
+        <Button
+            android:id="@+id/friendsButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/holo_green_dark"
+            android:text="@string/friend_history"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:onClick="onFriendsButtonClick"/>
+
+        <Button
+            android:id="@+id/familyButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/holo_purple"
+            android:text="@string/family_ancestry"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:onClick="onFamilyButtonClick"/>
+
+
+    </GridLayout>
+
+</RelativeLayout>
