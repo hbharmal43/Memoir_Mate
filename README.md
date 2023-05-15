@@ -1,6 +1,7 @@
 <br />
 <div align="center">
   <a href="Memoir Mate">
+    
     <img src="img/ic_family.png" alt="Logo" width="180" height="150">
   </a>
 
@@ -70,3 +71,8 @@ This project is licensed under [MIT License](https://choosealicense.com/licenses
 
 
 ## Screenshots
+<div align="left"> 
+    <img src="img/ic_family.png" alt="Logo" width="180" height="150">
+    <img src="img/ic_family.png" alt="Logo" width="180" height="150">
+    <img src="img/ic_family.png" alt="Logo" width="180" height="150">
+</div>
