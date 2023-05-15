@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="Memoir Mate">
-    <img src="img/ic_family.png" alt="Logo" width="150" height="150">
+    <img src="img/ic_family.png" alt="Logo" width="180" height="150">
   </a>
 
   <h1 align="center">Memoir Mate</h1>
