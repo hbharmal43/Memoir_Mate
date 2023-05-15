@@ -72,7 +72,7 @@ This project is licensed under [MIT License](https://choosealicense.com/licenses
 
 ## Screenshots
 <div align="left"> 
-    <img src="img/ic_family.png" alt="Logo" width="180" height="150">
-    <img src="img/ic_family.png" alt="Logo" width="180" height="150">
-    <img src="img/ic_family.png" alt="Logo" width="180" height="150">
+    <img src="img/profile.png" alt="Logo" width="180" height="150">
+    <img src="img/upload.png" alt="Logo" width="180" height="150">
+    <img src="img/selection.png" alt="Logo" width="180" height="150">
 </div>
