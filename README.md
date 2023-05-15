@@ -4,7 +4,7 @@
     <img src="img/ic_family.png" alt="Logo" width="150" height="150">
   </a>
 
-  <h3 align="center">Memoir Mate</h3>
+  <h1 align="center">Memoir Mate</h1>
 
  
 </div>
