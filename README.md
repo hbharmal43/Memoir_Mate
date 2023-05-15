@@ -8,7 +8,7 @@
 
  
 </div>
-# Memoir Mate
+
 
 Memoir Mate is an Android application designed to help users keep track and record their family and friend history and events. It serves as a dynamic storage platform for preserving memories in the form of videos, photos, comments, and more. This project utilizes Java, XML, and Firebase technologies to provide a seamless user experience.
 
