@@ -26,3 +26,38 @@ Memoir Mate is an Android application designed to help users keep track and reco
 
 
 ## Technology Stack
+- Java
+- XML
+- FireBase
+- FireStore Database
+## Installation
+1. Clone Memoir Mate using git clone
+```bash
+git clone https://github.com/hbharmal43/Memoir_Mate/
+```
+2. Open the project in Android Studio.
+
+3. Configure Firebase in your project by following the Firebase setup instructions.
+
+4. Build and run the application on an Android device or emulator.
+## Documentation
+
+[Terms & Condition](https://www.termsandconditionsgenerator.com/live.php?token=Ap9fE335Myq47g3MoTaY7Y8NXmM9kSoU)
+
+[Privacy Policy](https://www.privacypolicies.com/live/23abd769-ae91-485a-84c9-1f4802a3a4df)
+
+
+## License
+
+This project is licensed under [MIT License](https://choosealicense.com/licenses/mit/)
+
+
+## Authors
+
+- [Hasnain Bharmal](https://www.github.com/hbharmal43)
+- [Aniv Surana]()
+- [Hatim Piplodwala]()
+- [Joshua Mora]()
+
+
+## Screenshots
